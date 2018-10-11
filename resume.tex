@@ -38,14 +38,14 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-1pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-1pt}]
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2 \vspace{-1pt}}
   }
 }
 
@@ -54,17 +54,17 @@
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-1pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-1pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-1pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -78,25 +78,6 @@
   \href{https://www.linkedin.com/in/cheuk-lau-31311626/}{https://www.linkedin.com/in/cheuk-lau-31311626/} & Mobile : +1-518-915-8165 \\
 \end{tabular*}
 
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Insight}{Palo Alto, CA}
-      {DevOps Engineering Fellows Program}{Jul. 2018 -- Present}
-    \resumeSubheading
-      {Texas A\&M University}{College Station, TX}
-      {Doctorate of Philosophy in Computational Physics;  GPA: 3.80}{Aug. 2011 -- May. 2016}
-    \resumeSubheading
-      {Pennsylvania State University}{University Park, PA}
-      {Master of Science in Nuclear Engineering;  GPA: 3.90}{Jan. 2009 -- Dec. 2010}
-    \resumeSubheading
-      {University of Illinois}{Urbana-Champaign, IL}
-      {Bachelor of Science in Nuclear Engineering;  GPA: 3.50}{Aug. 2004 -- May. 2008}
-  \resumeSubHeadingListEnd
-
-
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
@@ -105,8 +86,10 @@
       {Insight}{Palo Alto, CA}
       {DevOps Fellow}{Jul. 2018 - Present}
       \resumeItemListStart
-        \resumeItem{Project Name}
-          {Provide the project description here, making this long because I suspect this should take a minimum of two lines (list software used here).}
+        \resumeItem{DevOps Pipeline}
+          {Automatically deployed and monitored a data engineering pipeline handling 500GB of spatial-temporal data using a Terraform/Packer/Prometheus stack.}
+       \resumeItem{DevOps Deep Dive}
+          {Increased scalability and fault tolerance by using AWS auto-scaling and elastic load balancers across multiple availability zones.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -114,13 +97,11 @@
       {Computational Physicist}{Jul. 2016 - Jul. 2018}
       \resumeItemListStart
         \resumeItem{Code Verification}
-          {Developed automated testing of scientific codes using standard verification and validation procedures (C++, Python, Bash).}
+          {Automated testing of scientific codes by creating test scripts comparing computational to analytic and experimental results.}
         \resumeItem{Code Developer}
-          {Implemented and tested new methods from academic journals to further the capability of scientific codes in multiple disciplines e.g., plasma physics, fluid dynamics, radiation transport (C++, Git).}
+          {Furthered the capability of scientific codes in multiple disciplines e.g., plasma physics, fluid dynamics, radiation transport by implementing and testing new methods from academic journals.}
         \resumeItem{Mentor}
           {Provided guidance and technical direction to PhD-level summer interns.}
-        \resumeItem{Publications}
-          {\href{https://doi.org/10.3847/1538-4365/aa7ff5}{https://doi.org/10.3847/1538-4365/aa7ff5}, \href{https://e-reports-ext.llnl.gov/pdf/888520.pdf}{https://e-reports-ext.llnl.gov/pdf/888520.pdf}}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -128,9 +109,7 @@
       {National Excellence Fellow}{Aug. 2011 - May. 2016}
       \resumeItemListStart
         \resumeItem{Code Developer}
-          {Research on adaptive mesh refinement strategies for optimizing the computational efficiency of radiation transport codes (C++, Matlab, Git).}
-        \resumeItem{Publications}
-          {\href{https://doi.org/10.13182/NSE16-28}{https://doi.org/10.13182/NSE16-28}, \href{http://oaktrust.library.tamu.edu/handle/1969.1/158050}{http://oaktrust.library.tamu.edu/handle/1969.1/158050}}
+          {Improved the computational efficiency of radiation transport codes by developing adaptive mesh refinement strategies.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -138,25 +117,34 @@
       {Nuclear Engineer}{Aug. 2008 - Aug. 2011}
       \resumeItemListStart
         \resumeItem{Code Developer}
-          {Implemented and tested new methods from academic journals to further the capability of radiation transport codes (C++, Fortran, Git).}
+          {Furthered the capability of radiation transport codes by implementing and testing new methods from academic journals.}
         \resumeItem{Field Testing}
-          {Gathered instrumentation data from aircraft carriers and submarines for code validation.}
+          {Validated radiation transport codes by gathering instrumentation data from aircraft carriers and submarines for comparison.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Texas A\&M University}{College Station, TX}
+      {Doctorate of Philosophy in Nuclear Engineering}{Aug. 2011 -- May. 2016}
+    \resumeSubheading
+      {Pennsylvania State University}{University Park, PA}
+      {Master of Science in Nuclear Engineering}{Jan. 2009 -- Dec. 2010}
+    \resumeSubheading
+      {University of Illinois}{Urbana-Champaign, IL}
+      {Bachelor of Science in Nuclear Engineering}{Aug. 2004 -- May. 2008}
+  \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{TradeUp}
-      {App allowing users to manage their trading card game (TCG) inventory, view other users' inventory in the same location, and propose in-person trades. Item values update in real-time using third-party APIs.}
     \resumeSubItem{Catalog App}
-      {\href{https://github.com/cheuklau/catalog_app}{\bf https://github.com/cheuklau/catalog\_app} Sample app built on Flask demonstrating create, read, update and delete (CRUD) functionalities using an SQL backend with third-party authentication.}
+      {\href{https://github.com/cheuklau/catalog_app}{\bf https://github.com/cheuklau/catalog\_app} App built on Flask demonstrating create, read, update and delete (CRUD) functionalities using an SQL backend with third-party authentication.}
     \resumeSubItem{Neighborhood App}
-      {\href{https://github.com/cheuklau/neighborhood_app}{\bf https://github.com/cheuklau/neighborhood\_app} Sample app demonstrating the use of Javascript libraries (Knockout JS) and multiple third-party APIs (Google Maps and New York Times).}
-    \resumeSubItem{Adaptive Angular Quadrature}
-      {\href{https://github.com/cheuklau/phd_research}{\bf https://github.com/cheuklau/phd\_research} PhD work developing linear discontinuous finite-element based angular quadratures.}
+      {\href{https://github.com/cheuklau/neighborhood_app}{\bf https://github.com/cheuklau/neighborhood\_app} App demonstrating the use of Javascript libraries (Knockout JS) and multiple third-party APIs (Google Maps and New York Times).}
   \resumeSubHeadingListEnd
 
 %
@@ -164,11 +152,9 @@
 \section{Certifications -- available upon request}
   \resumeSubHeadingListStart
     \resumeSubItem{Udemy DevOps}
-      {Series of courses on DevOp tools (Docker, Kubernetes, Jenkins, Terraform, Prometheus).}
+      {Series of courses on DevOp tools (Docker, Kubernetes, Jenkins, Puppet, Terraform, Prometheus).}
     \resumeSubItem{Udacity Full-Stack Engineering Nano-Degree}
       {Certificate covering both front and backend development along with server deployment. (HTML, CSS, Javascript, jQuery, Knockout JS, Flask, SQL, Apache, AWS).}
-    \resumeSubItem{DataCamp Data Scientist with Python}
-      {Certificate covering data manipulation, visualization, statistics and machine learning (Pandas, NumPy, Scikit-Learn).}
   \resumeSubHeadingListEnd
 
 %-------------------------------------------
